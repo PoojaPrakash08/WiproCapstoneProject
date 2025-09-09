@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="90.186" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="User Registration (SkyJoy Account)" name="Successful registration with valid details - #1.1" time="48.183">
+<system-out><![CDATA[
+Given I open the VietJet Air website for Registration.......................passed
+And I navigate to the Registration page.....................................passed
+When I enter Family Name "Belgaumkar", Given Name "Pooja", Phone "987654321", Birthday "15/06/2002", Email "pooja@testmail.com".passed
+And I click confirm.........................................................passed
+Then I should see a success message "Registration successful."..............passed
+]]></system-out>
+</testcase>
+<testcase classname="User Registration (SkyJoy Account)" name="Registration with invalid email - #1.1" time="41.379">
+<system-out><![CDATA[
+Given I open the VietJet Air website for Registration.......................passed
+And I navigate to the Registration page.....................................passed
+When I enter Family Name "Belgaumkar", Given Name "Pooja", Phone "987654321", Birthday "15/06/2002", Email "abcdefg".passed
+Then I should see a registration email error message "Email is not valid"...passed
+]]></system-out>
+</testcase>
+</testsuite>

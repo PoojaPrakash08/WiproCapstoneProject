@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="112.009" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="Flight Search" name="Search flights with valid details" time="69.886">
+<system-out><![CDATA[
+Given I open the VietJet Air website for FlightSearch.......................passed
+When I select origin "SGN" and destination "BMV"............................passed
+And I select departure day "21" and return day "25".........................passed
+And I click search flights..................................................passed
+Then I should see flight options displayed..................................passed
+And I select a departure flight and continue................................passed
+And I select a return flight and continue...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Flight Search" name="Search flights with no value for origin" time="41.428">
+<system-out><![CDATA[
+Given I open the VietJet Air website for FlightSearch.......................passed
+When I select origin "" and destination ""..................................passed
+And I select departure day "21" and return day "25".........................passed
+And I click search flights..................................................passed
+Then I should see a flight search error message "Please fill in searching flight information".passed
+]]></system-out>
+</testcase>
+</testsuite>

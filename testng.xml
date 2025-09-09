@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="VietJet Suite" parallel="false">
+  <test name="Ordered Tests">
+    <classes>
+     	   <class name="runner.TestRunnerRegistration"/>
+           <class name="runner.TestRunnerLogin"/>
+		   <class name="runner.TestRunnerBookingFlow"/>
+<!--       <class name="runner.TestRunnerFlightSearch"/> -->
+<!--       <class name="runner.TestRunnerPassenger"/> -->
+<!--       <class name="runner.TestRunnerPayment"/> -->
+    </classes>
+  </test>
+</suite>

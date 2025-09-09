@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="39.336" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="User Login (SkyJoy)" name="Login with invalid credentials - #1.1" time="39.243">
+<system-out><![CDATA[
+Given I open the VietJet Air website for Login..............................passed
+Given I navigate to the Login page..........................................passed
+When I enter phone number "987654321".......................................passed
+And I click sign in.........................................................passed
+Then I should see a login error message "Account does not exist yet. Please check again.".passed
+]]></system-out>
+</testcase>
+</testsuite>

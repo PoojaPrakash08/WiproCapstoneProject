@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="5.333" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="Payment Module" name="Invalid Card Number - #1.1" time="5.3">
+<failure type="java.lang.NullPointerException" message="Cannot invoke &quot;utils.ElementUtils.click(org.openqa.selenium.By)&quot; because &quot;this.elementUtils&quot; is null">
+<![CDATA[java.lang.NullPointerException: Cannot invoke "utils.ElementUtils.click(org.openqa.selenium.By)" because "this.elementUtils" is null
+	at pages.PaymentPage.clickPayNow(PaymentPage.java:38)
+	at stepDefinitions.PaymentSteps.user_is_on_payment_method_page(PaymentSteps.java:20)
+	at ✽.user is on Payment Method page(file:///C:/Users/POOJA/eclipse-workspace/new%20workplace/VietJetAirTest/src/main/resources/features/Payment.feature:6)
+]]>
+</failure>
+<system-out><![CDATA[
+Given user is on Payment Method page........................................failed
+When user enters invalid card details "1234 5678 9123 4", "POOJA", "02/30", "123", "WhiteField, Bengaluru", "Bengaluru", "IN - India".skipped
+Then error message "Card number is invalid" should be displayed on Payment Page.skipped
+]]></system-out>
+</testcase>
+</testsuite>
