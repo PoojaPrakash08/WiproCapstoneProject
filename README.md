@@ -43,3 +43,7 @@ The framework is designed with **scalability, readability, and maintainability**
 - Passenger Details (Positive & Negative)
 - Payment (Negative)
 - End-to-End Booking Flow
+
+---
+
+📌 Project created for automation practice and framework demonstration.
